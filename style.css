@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+nav {
+  display: flex;
+  margin: 30px auto;
+  align-items: center;
+}
+ul {
+  flex: 1;
+  text-align: right;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0px 25px;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  position: relative;
+}
+ul li a:hover {
+  color: #3cc3b1;
+}
+ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #3cc3b1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  transition: 0.3s;
+}
+ul li a:hover::after {
+  width: 80%;
+}
+.logo-color {
+  color: #3cc3b1;
+}
+.logo {
+  font-size: 32px;
+}
+.mobile-app {
+  display: flex;
+  margin-top: 80px;
+}
+.col-1,
+.col-2 {
+  flex-basis: 50%;
+}
+.col-2 img {
+  width: 100%;
+}
+.col-1 h3 {
+  font: 20px;
+  color: rgb(75, 75, 75);
+  margin-top: 30px;
+}
+.col-1 h1 {
+  font-size: 40px;
+  margin-top: 10px;
+}
+.col-1 p {
+  font-size: 14px;
+  color: rgb(95, 95, 95);
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+.app-icons img {
+  width: 60px;
+  border-radius: 50%;
+  margin: 20px 20px;
+  cursor: pointer;
+}
+.app-icons img:hover {
+  border: 2px solid #3cc3b1;
+}
+button {
+  padding: 7px 30px;
+  border: none;
+  outline: noen;
+  background: #3cc3b1;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+}
+.social-profiles {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  left: 10px;
+  top: 30%;
+}
+.social-profiles img {
+  width: 30px;
+  border-radius: 50%;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+.social-profiles img:hover {
+  border: 2px solid #3cc3b1;
+}
